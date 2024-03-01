@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/SmartCoding08/",
+    "build": "vite build --base=/SmartCoding08-98/",
     "preview": "vite preview"
   },
   "devDependencies": {
