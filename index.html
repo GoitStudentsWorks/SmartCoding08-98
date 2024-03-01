@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/SmartCoding08-98/assets/favicon-0fa18760.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/SmartCoding08-98/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/SmartCoding08-98/assets/scroll-up-0aecb007.js">
+    <link rel="modulepreload" crossorigin href="/SmartCoding08-98/assets/vendor-0cb09735.js">
+    <link rel="stylesheet" href="/SmartCoding08-98/assets/scroll-up-0843d72b.css">
+  </head>
+  <body>
+    <header class="header">
+    <div class="container cont-header ">
+        <nav class="list-header">
+            <a href="./index.html" class="logo-header"><svg class="icon-logo-header" width="24" height="24"><use href="/SmartCoding08-98/assets/logo-header-cb8804a2.svg#icon-logo-header"></use></svg>Bookshelf</a>
+            <ul class="list-nav">
+                <li class="item-list-nav"><a href="./index.html" class="link-nav">home</a></li>
+                <li class="item-list-nav" id="shopping-link"><a href="./2-shopping-list.html" class="link-nav">shopping list<button class="icon-shopping-header" width="13.33" height="16.67"></button></a></li>
+            </ul>
+        </nav>
+        <div class="buttons-header">
+        <!-- Кнопка перимикача -->
+        <button class="toggle-theme"></button>
+        <!-- Кнопка перимикача -->
+
+        <button class="btn-menu"><svg class="icon-menu-header" width="28" height="28"><use class="icon-menu-mobile" href="/SmartCoding08-98/assets/mobile-header-icon-5d8f0044.svg#icon-left"></use></svg></button>
+
+    </div>
+    </div>
+</header>
+
+    <main class="main">
+      <div class="container main-container">
+        <aside class="sidebar">
+          <nav class="sidebar-category-container">
+    <ul class="sidebar-category-list">
+        <li class="sidebar-category-item all-category category-active">
+            All categories
+        </li>
+    </ul>
+</nav>
+          <div class="fund-block">
+  <div class="fund-title-icon">
+    <h2 class="funds-title">Support Ukraine</h2>
+    <img
+      class="fund-title-img"
+      src="/SmartCoding08-98/assets/Vector-90fa8fc6.svg"
+      alt="national emblem"
+    />
+  </div>
+  <ul class="funds-list" id="fundList">
+    <li class="fund-item">
+      <span class="fund-num">01</span>
+      <a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/stc-logo-removebg-preview-8cd79f6d.png"
+          alt="save the children fund"
+          class="fund-img"
+      /></a>
+    </li>
+    <li class="fund-item">
+      <span class="fund-num">02</span
+      ><a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/ph-logo-b7dde8de.png"
+          alt="project hope fund"
+          class="fund-img"
+      /></a>
+    </li>
+    <li class="fund-item">
+      <span class="fund-num">03</span
+      ><a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/medical-corps-1f0714fa.png"
+          alt="international medical corps fund"
+          class="fund-img"
+      /></a>
+    </li>
+    <li class="fund-item">
+      <span class="fund-num">04</span
+      ><a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/razom-logo-628cf531.png"
+          alt="razom fund"
+          class="fund-img"
+      /></a>
+    </li>
+    <li class="fund-item">
+      <span class="fund-num">05</span
+      ><a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/aah-logo-dacc9947.png"
+          alt="action against hunger fund"
+          class="fund-img"
+      /></a>
+    </li>
+    <li class="fund-item">
+      <span class="fund-num">06</span
+      ><a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/cfsp-logo-1ec24621.png"
+          alt="charity foundation sergiy prytula"
+          class="fund-img"
+      /></a>
+    </li>
+    <li class="fund-item">
+      <span class="fund-num">07</span
+      ><a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/msf-logo-removebg-preview-ed4775cd.png"
+          alt="medecins sans frontieres"
+          class="fund-img"
+      /></a>
+    </li>
+    <li class="fund-item">
+      <span class="fund-num">08</span
+      ><a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/wv-logo-775a808f.png"
+          alt="world vision"
+          class="fund-img"
+      /></a>
+    </li>
+    <li class="fund-item">
+      <span class="fund-num">09</span
+      ><a href="#" target="_blank" class="fund-link"
+        ><img
+          src="/SmartCoding08-98/assets/u24-logo-4c5a802b.png"
+          alt="united24"
+          class="fund-img"
+      /></a>
+    </li>
+  </ul>
+    <button class="fund-btn" id="myButton">
+      <img src="/SmartCoding08-98/assets/arrow-f0ab9814.svg" alt="" class="arrow-fund" />
+    </button>
+</div>
+
+        </aside>
+        <section class="home-page">
+          <section clas s="bestsellers">
+  <div class="bestsellers-container">
+    <h1 class="bestsellers-title">
+      Best Sellers <span class="bestsellers-title-color">Books</span>
+    </h1>
+    <ul class="bestsellers-list"></ul>
+  </div>
+</section>
+
+        </section>
+      </div>
+    </main>
+
+    <!-- Привязати клас is-hidden для приховування контейнеру menu-container-->
+
+<div class="menu-container overlay js-menu-container is-hidden" id="mobile-menu">
+  <div class="mobile-menu-list">
+    <a class="mobile-button" href="./index.html">Home</a>
+    <a class="mobile-shopping-list" href="./2-shopping-list.html"
+      >shopping-list
+      <svg class="mobile-shopping-icon" width="20" height="20">
+        <use href="/SmartCoding08-98/assets/shopping-icon-5c4c7abf.svg#icon-shopping"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+
+
+    <div class="modal is-hidden" id="modal">
+    <div class="modal-content">
+        <button class="modal-close" type="button">
+            <svg class="x-close" width="12" height="12">
+                <use href="/SmartCoding08-98/assets/sprite-14cd3210.svg#x-close"></use>
+            </svg>
+        </button>
+        <div class="modal-card">
+            <!-- <img class="modal-book-cover" src="./images/image.jpg" alt="Book Cover">
+            <div class="modal-blok-text">
+                <p class="modal-book-title">Title</p>
+                <p class="modal-author">author</p>
+                <p class="modal-description">description</p>
+                <div class="modal-links">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <picture class="icon-link-amazon">
+                            <source srcset="./images/pop-up/amazon.webp" type="image/webp"/>
+                            <source srcset="./images/pop-up/amazon.png" type="image/png"/>
+                            <img src="./images/pop-up/amazon.png" alt="Amazon"/>
+                        </picture>
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <picture class="icon-link-apple">
+                            <source srcset="./images/pop-up/open-book.webp" type="image/webp"/>
+                            <source srcset="./images/pop-up/open-book.png" type="image/png"/>
+                            <img src="./images/pop-up/open-book.png" alt="Amazon"/>
+                        </picture>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+        <button class="modal-add-to-cart">Add to Shopping List</button>
+    </div>
+</div>
+
+    
+  </body>
+</html>
